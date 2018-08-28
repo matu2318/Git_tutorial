@@ -14,3 +14,6 @@ branch -d <branch名>
 --branchを使って並行作業する--
 
 pull リモートレポジトリの内容を取得する
+
+push
+-> git push <pushしたいリポジトリへのアドレス> <pushしたいbranch名>
