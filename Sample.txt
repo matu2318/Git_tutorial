@@ -8,3 +8,7 @@ log コミットの履歴を確認する
 --branchの使い方--
 git checkout -b <branch名>
 ->これでチェックアウトしながらbranch作成ができる
+branch -d <branch名>
+->これで削除できる
+
+--branchを使って並行作業する--
