@@ -6,9 +6,9 @@ log コミットの履歴を確認する
 -> --graph --oneline commitの履歴を見やすくするオプション
 
 --branchの使い方--
-git checkout -b <branch名>
+git checkout -b [branch_name]
 ->これでチェックアウトしながらbranch作成ができる
-branch -d <branch名>
+branch -d [branch_name]
 ->これで削除できる
 
 --branchを使って並行作業する--
@@ -16,4 +16,13 @@ branch -d <branch名>
 pull リモートレポジトリの内容を取得する
 
 push
--> git push <pushしたいリポジトリへのアドレス> <pushしたいbranch名>
+-> git push [repository_url] [branch_name]
+  ->リポジトリのアドレスをいちいち入力するの面倒だなぁ。。。
+  -> git remote add [short_name] [repository_url]
+  -> これ　git push [short_name] [branch_name]でpushできる
+
+remote
+-> git remote -v
+  ->今登録されてるremoteが確認できる
+-> git remote rm [repository_name]
+  ->登録されてるremoteを削除できる
